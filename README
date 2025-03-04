@@ -4,5 +4,5 @@ Build:
     make
 Useage: 
     ./cpu-oversell-detector
-It will run a load and check cpu steal% ,should always below 20%.(0% on a bare metal) 
+It will run a load and check cpu steal% ,should always below 20%.(0% on bare metal platform) 
 Ctrl +C to exit.
