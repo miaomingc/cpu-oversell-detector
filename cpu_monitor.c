@@ -55,6 +55,7 @@ void *monitor_cpu_usage(void *arg)
         PrevIdle = Idle;
         PrevNonIdle = NonIdle;
         PrevTotal = Total;
+        PrevSteal=Steal;
         float cpu_usage = (float)(totald - idled) / totald * 100;
         float cpu_steal = (float)(steald) / totald * 100;
         printf("CPU Usage : %.2f%%  CPU Steal : %.2f%% \r", cpu_usage, cpu_steal);
